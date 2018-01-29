@@ -37,7 +37,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
                 <execution>
                     <id>RestAPI-negativeTestSuite</id>
                     <configuration>
-                        <projectFile>RestAPI-negativeTestSuite.xml</projectFile>
+                        <projectFile>SoapUIProPOC.xml</projectFile>
                         <outputFolder>target/surefire-reports</outputFolder>
                         <testSuite>Negative tests</testSuite>
 
