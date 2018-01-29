@@ -27,6 +27,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
                 <value>message=Hello World!</value>
             </projectProperties>
 	<printReport>true</printReport>
+		<outputFolder>target/surefire-reports</outputFolder>
         </configuration>
     </plugin>
 		</plugins>
