@@ -9,25 +9,19 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 <version>1.0-SNAPSHOT</version>
 <packaging>jar</packaging>
 <description>blah blah</description>
-<pluginRepositories>
-    <pluginRepository>
-        <id>smartbear-sweden-plugin-repository</id>
-        <url>http://www.soapui.org/repository/maven2/</url>
-    </pluginRepository>
-</pluginRepositories>
 <build>
-<plugin>
     <plugins>
-         <groupId>com.smartbear.soapui</groupId>
+	<plugin>
+        <groupId>com.smartbear.soapui</groupId>
         <artifactId>soapui-maven-plugin</artifactId>
         <version>4.6.1</version>
         <configuration>
-            <projectFile>simple-test-soapui-project.xml</projectFile>
+            <projectFile>SoapUIProPOC.xml</projectFile>
             <projectProperties>
                 <value>message=Hello World!</value>
             </projectProperties>
         </configuration>
+    </plugin>
 		</plugins>
-</plugin>
 </build>
 </project>
