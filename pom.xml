@@ -25,7 +25,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
                 <execution>
                     <id>RestAPI-positiveTestSuite</id>
                     <configuration>
-                        <projectFile>RestAPI-positiveTestSuite.xml</projectFile>
+                        <projectFile>SoapUIProPOC.xml</projectFile>
 
                         <outputFolder>target/surefire-reports</outputFolder>
                         <testSuite>Positive cases</testSuite>
