@@ -22,7 +22,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
         <artifactId>soapui-maven-plugin</artifactId>
         <version>4.6.1</version>
         <configuration>
-            <projectFile>Flickr-soapui-project.xml</projectFile>
+            <projectFile>SoapUIProPOC.xml</projectFile>
             <projectProperties>
                 <value>message=Hello World!</value>
             </projectProperties>
