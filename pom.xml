@@ -9,7 +9,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 <version>1.0-SNAPSHOT</version>
 <packaging>jar</packaging>
 <description>blah blah</description>
-	<pluginRepositories>
+<pluginRepositories>
     <pluginRepository>
         <id>smartbear-sweden-plugin-repository</id>
         <url>http://www.soapui.org/repository/maven2/</url>
@@ -17,48 +17,15 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 </pluginRepositories>
 <build>
     <plugins>
-        <plugin>
-            <groupId>com.smartbear.soapui</groupId>
-            <artifactId>soapui-maven-plugin</artifactId>
-            <version>5.0.0</version>
-			<executions>
-                <execution>
-                    <id>RestAPI-positiveTestSuite</id>
-                    <configuration>
-                        <projectFile>SoapUIProPOC.xml</projectFile>
-
-                        <outputFolder>target/surefire-reports</outputFolder>
-                        <testSuite>Positive cases</testSuite>
-
-                        <junitReport>true</junitReport>
-                        <exportwAll>true</exportwAll>
-                        <printReport>true</printReport>
-                        <testFailIgnore>true</testFailIgnore>
-                    </configuration>
-                    <goals>
-                        <goal>test</goal>
-                    </goals>
-                    <phase>test</phase>
-					 </execution>
-                <execution>
-                    <id>RestAPI-negativeTestSuite</id>
-                    <configuration>
-                        <projectFile>SoapUIProPOC.xml</projectFile>
-                        <outputFolder>target/surefire-reports</outputFolder>
-                        <testSuite>Negative tests</testSuite>
-
-                        <junitReport>true</junitReport>
-                        <exportwAll>true</exportwAll>
-                        <printReport>true</printReport>
-                        <testFailIgnore>true</testFailIgnore>
-                    </configuration>
-                    <goals>
-                        <goal>test</goal>
-                    </goals>
-                    <phase>test</phase>
-                </execution>
-            </executions>
-        </plugin>
+         <groupId>com.smartbear.soapui</groupId>
+        <artifactId>soapui-maven-plugin</artifactId>
+        <version>4.6.1</version>
+        <configuration>
+            <projectFile>SoapUIProPOC.xml</projectFile>
+            <projectProperties>
+                <value>message=Hello World!</value>
+            </projectProperties>
+        </configuration>
 		</plugins>
 </build>
 </project>
